@@ -2,7 +2,7 @@
 title: 在腾讯云部署Wiki.js
 description: 如何在国内云服务器部署Wiki.js
 published: true
-date: 2023-06-04T10:49:46.214Z
+date: 2023-06-04T16:40:30.551Z
 tags: 
 editor: markdown
 dateCreated: 2023-06-04T10:48:57.574Z
@@ -46,17 +46,33 @@ sudo apt-get install postgresql postgresql-contrib -y
 ```
 
 ## 创建用户和数据库
+切换至postgres用户：
 ```
 sudo su - postgres
+```
+进入postgresSQL：
+```
 psql
+```
+创建新的用户`wikijs`并设置密码：
+```
 CREATE ROLE wikijs WITH LOGIN;
 \password wikijs
 ```
 此时根据提示设置密码，输入两次。
 ```
 CREATE DATABASE wikidb;
+```
+设置权限：
+```
 GRANT ALL PRIVILEGES ON DATABASE wikidb TO wikijs;
+```
+退出postgresSQL：
+```
 \q
+```
+注销postgres用户：
+```
 exit
 ```
 
@@ -134,7 +150,7 @@ sudo apt install nginx -y
 ```
 
 ## 设置Nginx
-> 考虑到安全性，这里默认已申请好SSL证书。
+> 考虑到安全性，这里默认设置https。
 {.is-info}
 ### 配置http重定向至https
 ```
