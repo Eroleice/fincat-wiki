@@ -2,7 +2,7 @@
 title: 在腾讯云部署Wiki.js
 description: 如何在国内云服务器部署Wiki.js
 published: true
-date: 2023-06-04T16:40:30.551Z
+date: 2023-08-25T13:09:14.622Z
 tags: 
 editor: markdown
 dateCreated: 2023-06-04T10:48:57.574Z
@@ -12,6 +12,8 @@ dateCreated: 2023-06-04T10:48:57.574Z
 CPU - 4核 内存 - 8GB
 系统盘 - SSD云硬盘 100GB
 Ubuntu 22.04 LTS
+
+实际上Wiki.js对资源的占用很低，我单纯是因为手头有这么一个就用了，活动时候买的，放着也是放着。
 
 # 安装Node
 > wiki.js仅可运行于Node v12/v14/v16 版本上！
