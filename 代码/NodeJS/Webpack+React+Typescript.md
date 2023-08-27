@@ -2,7 +2,7 @@
 title: Webpack+React+Typescript
 description: 更优雅地写代码
 published: true
-date: 2023-08-27T11:06:43.552Z
+date: 2023-08-27T11:16:39.265Z
 tags: 
 editor: markdown
 dateCreated: 2023-08-27T11:06:43.552Z
@@ -48,13 +48,21 @@ npm install -D typescript ts-loader webpack webpack-cli copy-webpack-plugin styl
 ```
 
 ## 搭建项目结构
-- dist/
-- public/
-		- index.html
-- src/
-		- components/
-    		- Header.tsx
-        - Header.css
-    		- Footer.tsx
-        - Footer.css
+```
+dist/
+public/
+		index.html
+src/
+		components/
+    		Header.tsx
+        Header.css
+    		Footer.tsx
+        Footer.css
+		entrypoint.tsx
+    App.tsx
+```
+上述结构中，`dist/`是最终的程序输出目录，包含网站本身的index.html、js文件和css文件。`public/`包含了所有不需要编译而直接复制到`dist/`的内容，例如我们上方的`index.html`最终就会**原封不动**地放入`dist/`目录下。而`src/`目录便是我们代码的存储位置了，里面的`entrypoint.tsx`将会是webpack打包时运行的文件。
+
+> 由于`public/index.html`是**原封不动**地被复制到`public/`目录下，里面有关调用js文件和css文件（包括webpack生成地js文件和css文件！）都需要手动写入！
+{.is-warning}
 
