@@ -2,7 +2,7 @@
 title: Webpack+React+Typescript
 description: 更优雅地写代码
 published: true
-date: 2023-08-27T11:16:39.265Z
+date: 2023-08-27T11:22:52.772Z
 tags: 
 editor: markdown
 dateCreated: 2023-08-27T11:06:43.552Z
@@ -65,4 +65,26 @@ src/
 
 > 由于`public/index.html`是**原封不动**地被复制到`public/`目录下，里面有关调用js文件和css文件（包括webpack生成地js文件和css文件！）都需要手动写入！
 {.is-warning}
+
+## 创建index.html
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bundle.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script src="bundle.js"></script>
+</body>
+</html>
+```
+
+> 如果是在使用`Visual Studio Code`，可以新建`index.html`后，在编辑器中按`shift+1`，即可自动获得一份基础的html模板，你仍然需要手动添加上面代码中的第7、11、12行。
+{.is-info}
+
 
