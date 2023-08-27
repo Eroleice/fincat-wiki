@@ -2,14 +2,14 @@
 title: kd&均线在eruusd上的表现
 description: mt5学习笔记
 published: true
-date: 2023-08-25T13:16:52.945Z
+date: 2023-08-27T11:07:30.404Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-26T06:41:36.659Z
 ---
 
 # 版本1
-```
+```c++
 #property copyright "WDK"
 #property link      "https://www.mql5.com"
 #property version   "1.00"
