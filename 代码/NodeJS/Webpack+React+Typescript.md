@@ -2,7 +2,7 @@
 title: Webpack+React+Typescript
 description: 更优雅地写代码
 published: true
-date: 2023-08-27T11:22:52.772Z
+date: 2023-08-27T11:35:57.944Z
 tags: 
 editor: markdown
 dateCreated: 2023-08-27T11:06:43.552Z
@@ -54,10 +54,8 @@ public/
 		index.html
 src/
 		components/
-    		Header.tsx
-        Header.css
     		Footer.tsx
-        Footer.css
+        Footer.scss
 		entrypoint.tsx
     App.tsx
 ```
@@ -87,4 +85,51 @@ src/
 > 如果是在使用`Visual Studio Code`，可以新建`index.html`后，在编辑器中按`shift+1`，即可自动获得一份基础的html模板，你仍然需要手动添加上面代码中的第7、11、12行。
 {.is-info}
 
+## 创建Footer.tsx
+```ts
+import "./Footer.scss";
 
+export default function Footer() {
+  return (
+    <footer>
+      <a href="#">A Footer Link</a>
+    </footer>
+  );
+}
+```
+
+## 创建App.tsx
+```ts
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App";
+
+const rootElement = document.getElementById("root");
+
+// New as of React v18.x
+const root = createRoot(rootElement!);
+
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
+```
+
+## 创建entrypoint.tsx
+```ts
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App";
+
+const rootElement = document.getElementById("root");
+
+// New as of React v18.x
+const root = createRoot(rootElement!);
+
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
+```
