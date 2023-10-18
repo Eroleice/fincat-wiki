@@ -2,7 +2,7 @@
 title: Webpack+React+Typescript
 description: 更优雅地写代码
 published: true
-date: 2023-08-27T11:35:57.944Z
+date: 2023-10-18T06:07:33.099Z
 tags: 
 editor: markdown
 dateCreated: 2023-08-27T11:06:43.552Z
@@ -22,7 +22,7 @@ React等于将HTML的页面实现了面向对象编程。
 ## Typescript
 > TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
 
-Typescript是Javascript的超集，可以对参数赋予强类型，可以定义借口结构，可以进行编译随时发现代码运行可能的问题而不必等到出了BUG再排障。
+Typescript是Javascript的超集，可以对参数赋予强类型，可以定义接口结构，可以进行编译随时发现代码运行可能的问题而不必等到出了BUG再排障。
 
 # 软件版本
 - 
