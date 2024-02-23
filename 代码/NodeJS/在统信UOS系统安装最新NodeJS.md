@@ -2,7 +2,7 @@
 title: 在统信UOS系统安装最新NodeJS
 description: dddd
 published: true
-date: 2024-02-23T07:52:42.065Z
+date: 2024-02-23T08:26:01.003Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-23T07:44:03.652Z
@@ -52,6 +52,11 @@ sudo npm config set cache "node_cache"
 ```
 npm config set registry https://regirstry.npmmirror.com
 ```
+> 在实际使用中我发现这里的全局设置镜像源并没有生效，找了很久没有找到问题，我也没找到UOS系统中的配置文件.npmrc的位置，目前我的解决办法是在项目目录下新建一个.npmrc，然后写入
+registry=https://registry.npmmirror.com
+用项目变量覆盖全局变量的方式实现镜像源的切换。
+{.is-info}
+
 
 # 参考文献
 初级驾照. 统信UOS安装Node.js v18环境. [csdn.net](https://blog.csdn.net/qq_35957643/article/details/131958848){target=blank}. (2023-07-27)[2024-02-23].
