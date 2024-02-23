@@ -2,7 +2,7 @@
 title: 在统信UOS系统安装最新NodeJS
 description: dddd
 published: true
-date: 2024-02-23T07:48:27.475Z
+date: 2024-02-23T07:52:42.065Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-23T07:44:03.652Z
@@ -50,7 +50,7 @@ sudo npm config set cache "node_cache"
 
 ## 设置国内镜像源
 ```
-npm config set registry https://regirstry.npm.taobao.org
+npm config set registry https://regirstry.npmmirror.com
 ```
 
 # 参考文献
