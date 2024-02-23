@@ -2,7 +2,7 @@
 title: 在统信UOS系统安装最新NodeJS
 description: dddd
 published: true
-date: 2024-02-23T07:44:03.652Z
+date: 2024-02-23T07:48:27.475Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-23T07:44:03.652Z
@@ -54,4 +54,4 @@ npm config set registry https://regirstry.npm.taobao.org
 ```
 
 # 参考文献
-toobeloong. 统信系统专业版（UOS）安装node环境. [csdn.net](https://blog.csdn.net/freedomljt/article/details/125274318){target=blank}. (2023-04-06)[2024-02-23].
+初级驾照. 统信UOS安装Node.js v18环境. [csdn.net](https://blog.csdn.net/qq_35957643/article/details/131958848){target=blank}. (2023-07-27)[2024-02-23].
