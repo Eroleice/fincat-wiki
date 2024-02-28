@@ -2,7 +2,7 @@
 title: 新闻快讯
 description: 获取主流新闻网站的快讯新闻数据
 published: true
-date: 2024-02-28T08:44:59.989Z
+date: 2024-02-28T08:45:34.166Z
 tags: 
 editor: code
 dateCreated: 2024-02-28T07:37:07.948Z
@@ -17,14 +17,3 @@ dateCreated: 2024-02-28T07:37:07.948Z
     <td>新闻内容</td>
   </tr>
 </table>
-
-<script>
-    const url = "https://rsshub.feeded.xyz/yicai/news/gushi";
-    fetch(url)
-        .then(data => { return data.text() })
-        .then(res => {
-            const xml = new DOMParser().parseFromString(res, "text/xml");
-            console.log(xml);
-        })
-
-</script>
