@@ -1,0 +1,4 @@
+interface:
+  display_name: "Wiki Page Writer"
+  short_description: "撰写、修订并维护 Wiki.js Markdown 页面"
+  default_prompt: "Use $wiki-page-writer to draft or revise a FinCat Wiki markdown page with sources and Wiki.js-compatible syntax."

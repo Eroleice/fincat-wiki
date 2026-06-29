@@ -1,0 +1,4 @@
+interface:
+  display_name: "Wiki Maintainer"
+  short_description: "维护 Wiki.js 页面元数据、链接、图片、脚注与格式"
+  default_prompt: "Use $wiki-maintainer to scan and repair Wiki.js markdown metadata, links, images, footnotes, and formatting."

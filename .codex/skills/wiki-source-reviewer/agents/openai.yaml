@@ -1,0 +1,4 @@
+interface:
+  display_name: "Wiki Source Reviewer"
+  short_description: "核验 Wiki 页面来源、脚注、事实与高风险内容可靠性"
+  default_prompt: "Use $wiki-source-reviewer to audit a FinCat Wiki page for source reliability, citations, and factual risk."
