@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 840" role="img" aria-labelledby="title desc">
+  <title id="title">金田起义至南京推进路线示意图</title>
+  <desc id="desc">太平军从广西金田起义后，经广西转战、永安阶段，离开广西，经湖南、湖北进入长江流域，最终攻占南京的示意路线。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M1,1 L11,6 L1,11 Z" fill="#c33d32"/>
+    </marker>
+    <filter id="soft-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#44515c" flood-opacity="0.16"/>
+    </filter>
+    <style>
+      .bg { fill: #e9f4f8; }
+      .land { fill: #e4efda; stroke: #9aad88; stroke-width: 2; }
+      .coast { fill: none; stroke: #86a077; stroke-width: 2.6; }
+      .province { fill: none; stroke: #b3c2a7; stroke-width: 1.4; stroke-dasharray: 7 7; }
+      .river { fill: none; stroke: #74aeca; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; opacity: 0.86; }
+      .route-shadow { fill: none; stroke: #7a241f; stroke-width: 11; stroke-linecap: round; stroke-linejoin: round; opacity: 0.18; }
+      .route { fill: none; stroke: #c33d32; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow); }
+      .route-dash { fill: none; stroke: #e08c2a; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 3 9; opacity: 0.8; }
+      .node { fill: #c33d32; stroke: #fff7ea; stroke-width: 4; }
+      .node-start { fill: #e08c2a; }
+      .node-end { fill: #2d6da3; }
+      .node-text { fill: #fffdf8; font-weight: 700; font-size: 18px; text-anchor: middle; dominant-baseline: central; }
+      .card { fill: #fffdf8; stroke: #b8c7d1; stroke-width: 1; rx: 8; filter: url(#soft-shadow); }
+      .title { fill: #1d2b38; font-size: 31px; font-weight: 800; font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif; }
+      .subtitle { fill: #536676; font-size: 20px; font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif; }
+      .small { fill: #536676; font-size: 16px; font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif; }
+      .label { fill: #23313f; font-size: 19px; font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif; paint-order: stroke; stroke: #fffdf8; stroke-width: 5; stroke-linejoin: round; }
+      .label-strong { fill: #1d2b38; font-size: 21px; font-weight: 700; font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif; paint-order: stroke; stroke: #fffdf8; stroke-width: 5; stroke-linejoin: round; }
+      .province-label { fill: #768b6a; font-size: 25px; font-weight: 700; font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif; opacity: 0.72; }
+      .water-label { fill: #3b82ad; font-size: 24px; font-weight: 700; font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif; opacity: 0.75; }
+      .legend-line { stroke: #c33d32; stroke-width: 6; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1200" height="840"/>
+
+  <!-- A simplified partial map of south-central and lower-Yangtze China. It is deliberately schematic. -->
+  <path class="land" d="M0 0H984
+    C1014 74 992 136 960 185
+    C992 232 1002 288 970 350
+    C1012 404 1001 468 1035 535
+    C1076 612 1118 654 1083 722
+    C1050 784 975 814 895 840
+    H0Z"/>
+  <path class="coast" d="M984 0
+    C1014 74 992 136 960 185
+    C992 232 1002 288 970 350
+    C1012 404 1001 468 1035 535
+    C1076 612 1118 654 1083 722
+    C1050 784 975 814 895 840"/>
+
+  <path class="province" d="M226 710 C370 666 512 674 666 632"/>
+  <path class="province" d="M282 560 C377 533 440 544 520 515"/>
+  <path class="province" d="M420 370 C498 347 572 358 642 337"/>
+  <path class="province" d="M628 338 C626 432 610 524 638 616"/>
+  <path class="province" d="M724 333 C702 428 722 528 696 617"/>
+  <path class="province" d="M838 232 C865 304 846 369 866 440"/>
+  <path class="province" d="M900 446 C955 500 986 572 1004 646"/>
+  <path class="province" d="M506 520 C540 590 600 628 666 632"/>
+  <path class="province" d="M642 337 C695 312 762 305 838 232"/>
+
+  <path class="river" d="M488 332 C548 311 603 304 657 319 S768 326 824 281 S898 222 972 197"/>
+  <text class="water-label" x="695" y="296">长江</text>
+  <text class="water-label" x="1044" y="338">东海</text>
+  <text class="water-label" x="1032" y="730">南海</text>
+
+  <text class="province-label" x="330" y="646">广西</text>
+  <text class="province-label" x="458" y="471">湖南</text>
+  <text class="province-label" x="532" y="285">湖北</text>
+  <text class="province-label" x="662" y="506">江西</text>
+  <text class="province-label" x="780" y="366">安徽</text>
+  <text class="province-label" x="910" y="260">江苏</text>
+  <text class="province-label" x="938" y="585">浙江</text>
+  <text class="province-label" x="478" y="704">广东</text>
+
+  <rect class="card" x="38" y="38" width="575" height="185"/>
+  <text class="title" x="64" y="88">金田起义至南京推进路线</text>
+  <text class="subtitle" x="64" y="119">示意图，不按比例；节点位置取近似相对位置</text>
+  <line class="legend-line" x1="68" y1="156" x2="168" y2="156"/>
+  <text class="small" x="188" y="162">1851-1853：从广西金田至南京</text>
+  <circle class="node node-start" cx="85" cy="190" r="14"/>
+  <text class="node-text" x="85" y="190">1</text>
+  <text class="small" x="112" y="196">起点：金田起义</text>
+
+  <rect class="card" x="805" y="42" width="350" height="150"/>
+  <text class="label-strong" x="832" y="91">读图提示</text>
+  <text class="small" x="832" y="122">箭头表示主要推进方向，</text>
+  <text class="small" x="832" y="150">不表示精确行军线、控制范围</text>
+  <text class="small" x="832" y="178">或各阶段兵力规模。</text>
+
+  <path class="route-shadow" d="M289 671
+    C268 668 252 664 262 646
+    C276 631 300 630 319 633
+    C329 590 359 556 396 535
+    C462 496 483 432 500 360
+    C538 316 582 296 626 305
+    C677 320 724 321 772 298
+    C829 266 861 236 893 217"/>
+  <path class="route" d="M289 671
+    C268 668 252 664 262 646
+    C276 631 300 630 319 633
+    C329 590 359 556 396 535
+    C462 496 483 432 500 360
+    C538 316 582 296 626 305
+    C677 320 724 321 772 298
+    C829 266 861 236 893 217"/>
+  <path class="route-dash" d="M319 633 C349 603 374 568 396 535"/>
+
+  <circle class="node node-start" cx="289" cy="671" r="20"/>
+  <text class="node-text" x="289" y="671">1</text>
+  <text class="label-strong" x="312" y="698">金田</text>
+  <text class="label" x="312" y="723">1851.1 起义</text>
+
+  <circle class="node" cx="262" cy="646" r="18"/>
+  <text class="node-text" x="262" y="646">2</text>
+  <text class="label-strong" x="88" y="618">大湟江口 / 武宣 / 象州</text>
+  <text class="label" x="88" y="644">初期转战</text>
+
+  <circle class="node" cx="319" cy="633" r="18"/>
+  <text class="node-text" x="319" y="633">3</text>
+  <text class="label-strong" x="337" y="610">永安</text>
+  <text class="label" x="337" y="636">制度雏形</text>
+
+  <circle class="node" cx="396" cy="535" r="18"/>
+  <text class="node-text" x="396" y="535">4</text>
+  <text class="label-strong" x="414" y="516">离开广西</text>
+  <text class="label" x="414" y="542">北上突破</text>
+
+  <circle class="node" cx="500" cy="360" r="18"/>
+  <text class="node-text" x="500" y="360">5</text>
+  <text class="label-strong" x="520" y="382">湖南段</text>
+
+  <circle class="node" cx="626" cy="305" r="18"/>
+  <text class="node-text" x="626" y="305">6</text>
+  <text class="label-strong" x="646" y="277">湖北 / 长江流域</text>
+
+  <circle class="node node-end" cx="893" cy="217" r="21"/>
+  <text class="node-text" x="893" y="217">7</text>
+  <text class="label-strong" x="914" y="219">南京 / 天京</text>
+  <text class="label" x="914" y="244">1853 攻占</text>
+
+  <text class="small" x="42" y="812">路线据本页正文及来源脚注所述阶段整理：金田起义、广西转战、永安、离桂经湖南湖北入长江流域、攻占南京。</text>
+</svg>
