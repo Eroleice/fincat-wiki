@@ -16,6 +16,7 @@ Use this skill for writing work inside a Wiki.js Git storage repository. Treat t
 5. Verify Markdown rendering hazards before finishing: blank lines around tables/code/admonitions, matched footnote IDs, valid image paths, no accidental Windows paths, no unsupported Obsidian/MDX syntax.
 6. When facts may be current or consequential, verify with reliable sources and cite them in footnotes. Prefer official, primary, or authoritative sources.
 7. If AI materially drafts, rewrites, summarizes, translates, organizes sources, generates diagrams/tables/code, or otherwise changes page substance, add or update the page-end `AI辅助说明` required by the local AI policy.
+8. After completing the full document-editing workflow and verification, commit the current task's changes directly. Check `git status --short`, stage only files changed for the current task, and use a concise commit message.
 
 ## Front Matter
 
